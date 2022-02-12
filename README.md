@@ -88,3 +88,11 @@ can be used iteratively to obtain multiple models, resulting in a more robust al
 RANSAC does not always give accurate results since it is based on randomness. RANSAC is applicable for a larger 
 number of model parameters than Hough transform. In addition, optimization parameters are easier to choose than 
 Hough transform. RANSAC is computationally more efficient.
+
+## Result
+
+Below you can see an example of how the algorithm detects certain coins given a radius, and displays them.
+<br><br>
+<p align="center">
+  <img src="solution_coins.png" width=400> 
+</p>
