@@ -33,7 +33,7 @@ In brief, the l2 norm is calculated for neighboring pixels, and if the distance 
 visualization can be seen below.
 <br><br>
 <p align="center">
-  <img src="https://aishack.in/static/img/tut/circlehough_explanation.jpg" width=400> 
+  <img src="http://www.math.tau.ac.il/~turkel/notes/hough4_files/hough.jpg" width=400> 
 </p>
 <br><br>
 
