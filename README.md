@@ -8,9 +8,9 @@ about that size.
 In the [data](data) folder, you can find images to test the algorithms with. 
 <br><br>
 
-### How does it work?
+## How does it work?
 
-#### Hough Transform
+### Hough Transform
 
 In my Matlab code, you can find two different solutions using two different approaches. They differ in terms of how they iterate, 
 and how they determine local maxima. Hyperparameters like bin size, threshold or settings of the Canny edge detector have to be set 
@@ -57,7 +57,7 @@ Therefore, thresholding like mentioned in (1.1) is used, all non-zero values are
 Alternatively, adapative thresholding can be done by first determining the maximum local maxima value, scaling it down, 
 and then using this values as your threshold.
 
-#### RANSAC
+### RANSAC
 In the beginning, both change the image to a greyscale image and use the Canny edge detector to compute the edges. 
 After that we determine the x and y values where edges can be found. 
 For a specific amount of iterations, the following steps are repeated:<br>
@@ -80,7 +80,7 @@ for all detected circles. In case the number of inliers for an epoch is higher t
 is saved. Duplicates are deleted like in (1.a Hough Transform), and the centers are returned. This algorithm can be optimized 
 by using Adaptive RANSAC, or optimizing the boundary settings by an extensive hyperparameter search.
 
-### Differences betwen the algorithms
+## Differences between the algorithms
 
 One advantage is that RANSAC separates the observed data into inliers and outliers and therefore is more robust 
 regarding outliers, while Hough transform can be affected by noisy edge points for example. Furthermore, RANSAC 
